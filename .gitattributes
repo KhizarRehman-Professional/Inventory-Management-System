@@ -1,13 +1,21 @@
-# Force C++ as the primary language - hide everything else
+# Detect C++ files properly
 *.cpp linguist-detectable=true
 *.h linguist-detectable=true
 *.hpp linguist-detectable=true
 
-# Hide data/config files from language stats
-*.txt linguist-vendored=true
+# Detect data files (inventory.txt) as a real language, not hide them
+*.txt linguist-detectable=true
+
+# Documentation shouldn't count as a "coding language"
 *.md linguist-documentation=true
 
-# If you have any web files in the repo, hide them
-*.html linguist-vendored=true
-*.css linguist-vendored=true
-*.js linguist-vendored=true
+# If you have web files, detect them truthfully too
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.js linguist-detectable=true
+
+# Compiled binaries are NOT source code - hide them
+*.exe linguist-generated=true
+*.out linguist-generated=true
+*.o linguist-generated=true
+*.obj linguist-generated=true
