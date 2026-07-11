@@ -41,8 +41,10 @@ g++ Inventory-Management-System.cpp -o inventory
 ```
 .
 ├── Inventory-Management-System.cpp    # Main source code
-├── inventory.txt            # Data file (auto-generated)
-└── README.md                # This file
+├── inventory.txt
+├── README.md                # This file
+├── .gitignore          # Git ignore rules
+└── .gitattributes           # Data file (auto-generated)
 ```
 
 ---
