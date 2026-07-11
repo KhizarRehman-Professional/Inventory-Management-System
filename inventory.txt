@@ -1,0 +1,10 @@
+1,Laptop,10,85000.00,Electronics
+2,Mouse,50,1200.00,Accessories
+3,Keyboard,30,3500.00,Accessories
+4,Monitor,15,25000.00,Electronics
+5,Headphones,25,4500.00,Audio
+6,Webcam,20,8000.00,Electronics
+7,USB Cable,100,500.00,Accessories
+8,Desk Chair,8,15000.00,Furniture
+9,Desk Lamp,12,3000.00,Furniture
+10,Notebook,200,150.00,Stationery
