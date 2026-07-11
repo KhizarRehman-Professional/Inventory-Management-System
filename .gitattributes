@@ -1,20 +1,13 @@
-# GitHub Linguist: Force C++ detection and hide non-source files from language stats
-
-# Mark all C++ files as detectable
+# Force C++ as the primary language - hide everything else
 *.cpp linguist-detectable=true
 *.h linguist-detectable=true
 *.hpp linguist-detectable=true
 
-# Mark compiled/output files as generated (excluded from language stats)
-*.exe linguist-generated=true
-*.out linguist-generated=true
-*.o linguist-generated=true
-*.obj linguist-generated=true
-
-# Mark data files as vendored (excluded from language stats)
+# Hide data/config files from language stats
 *.txt linguist-vendored=true
+*.md linguist-documentation=true
 
-# If you ever add web files, detect them too
-*.js linguist-detectable=true
-*.html linguist-detectable=true
-*.css linguist-detectable=true
+# If you have any web files in the repo, hide them
+*.html linguist-vendored=true
+*.css linguist-vendored=true
+*.js linguist-vendored=true
